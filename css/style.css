@@ -254,3 +254,43 @@ body {
     color: var(--black);
     cursor: pointer;
 }
+
+.home{
+    background: url(../image/banner-bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.home .row .content{
+    flex: 1 1 42rem;
+}
+
+.home .row .books-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.home .row .books-slider a{
+    height: 25rem;
+}
+
+
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+}
+
+.home .row .books-slider .stand{
+    margin-top: -1rem;
+}
+
+
+
+
