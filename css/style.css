@@ -256,7 +256,7 @@ body {
 }
 
 .home{
-    background: url(../image/banner-bg.jpg)no-repeat;
+    background: url(../image/banner-bg\ \(2\).jpg)no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -289,8 +289,19 @@ body {
 
 .home .row .books-slider .stand{
     margin-top: -1rem;
+    width: 100%;
 }
 
+.home .row .content h3{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+.home .row .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
 
 
 
