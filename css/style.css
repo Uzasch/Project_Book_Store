@@ -87,7 +87,7 @@ section{
     width: 50rem;
     height: 5rem;
     border: var(--border);
-    overflow: hidden;
+
     background: white;
     display: flex;
     align-items: center;
@@ -271,27 +271,6 @@ body {
     flex: 1 1 42rem;
 }
 
-.home .row .books-slider{
-    flex: 1 1 42rem;
-    text-align: center;
-    margin-top: 2rem;
-
-}
-
-.home .row .books-slider a{
-    height: 25rem;
-}
-
-
-.home .row .books-slider a:hover img{
-    transform: scale(.9);
-}
-
-.home .row .books-slider .stand{
-    margin-top: -1rem;
-    width: 100%;
-}
-
 .home .row .content h3{
     color: var(--black);
     font-size: 4.5rem;
@@ -302,6 +281,58 @@ body {
     padding: 1rem 0;
     line-height: 2;
 }
+.home .row .slider-container {
+    flex: 1 1 42rem;
+    text-align: center;
+    width: 40%;
+    margin-top: 2rem;
+}
+.home .row .slider-container a{
+    margin:0 0 1rem 5rem;
+}
+
+.home .row .slider-container a img{
+    height: 25rem;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+
+.home .row .slider-container a:hover img{
+    transform: scale(0.9);
+}
+.home .row .slider-container .stand{
+    /* margin-top: 1rem; */
+    width: 100%;
+}
+
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
+    gap: 2.5rem;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.icons-container .icons i{
+    font-size: 3.5rem;
+    color: var(--green);
+}
+
+.icons-container .icons h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-bottom: .2rem;
+}
+.icons-container .icons p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
 
 
 
