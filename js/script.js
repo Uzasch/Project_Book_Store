@@ -25,6 +25,26 @@ window.onload = () =>{
     }
 }
 
+function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username === "") {
+        alert("Please enter your username.");
+        return false;
+    }
+
+    if (password === "") {
+        alert("Please enter your password.");
+        return false;
+    }
+
+    // Add additional validation if needed
+
+    return true;
+}
+
+
 $(document).ready(function() {
     $('.slider').slick({
         slidesToShow: 2, 

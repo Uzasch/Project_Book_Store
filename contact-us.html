@@ -38,7 +38,7 @@
                 <a href="index.html">home</a>
                 <a href="featured.html">featured</a>
                 <a href="arrival.html">arrivals</a>
-                <a href="#reviews">reviews</a>
+                <a href="https://www.sitejabber.com/reviews/bookswagon.com">reviews</a>
                 <a href="#contact">contact</a>
             </nav>
         </div>
@@ -50,12 +50,12 @@
     <div class="login-form-container">
 
         <div id="close-login-btn" class="fas fa-times"></div>
-        <form action="">
+        <form action="" onsubmit="return validateForm()">
             <h3>sign in</h3>
             <span>username</span>
-            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <input type="email" name="username" class="box" placeholder="enter your email" id="username">
             <span>password</span>
-            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <input type="password" name="password" class="box" placeholder="enter your password" id="password">
             <div class="checkbox">
                 <input type="checkbox" name="" id="remember-me">
                 <label for="remember-me">remember-me</label>
@@ -78,10 +78,10 @@
                     <input type="submit" value="Verify" class="btn">
                 </div>
                 <textarea name="" id="" cols="30" rows="2" placeholder="Address"></textarea>
-                <input type="number" name=""class="box" placeholder="Phone/Mobile" id="">
+                <input type="number" name="" class="box" placeholder="Phone/Mobile" id="">
                 <input type="text" name="" class="box" placeholder="Subject" id="">
                 <select class="box">
-                    <option class="drop" value="--Select--" >--Select--</option>
+                    <option class="drop" value="--Select--">--Select--</option>
                     <option class="drop" value="Payment Related">Payment Related</option>
                     <option class="drop" value="Order Related">Order Related</option>
                     <option class="drop" value="Courier Related">Courier Related</option>
@@ -89,14 +89,15 @@
                     <option class="drop" value="Authors/Publishers Related">Authors/Publishers Related</option>
                     <option class="drop" value="Corporate Order/Bulk Sales">Corporate Order/Bulk Sales</option>
                     <option class="drop" value="Business Related">Business Related</option>
-                    <option class="drop" value="Features,suggestions &amp; Feedback">Features,suggestions &amp; Feedback</option>
+                    <option class="drop" value="Features,suggestions &amp; Feedback">Features,suggestions &amp; Feedback
+                    </option>
                     <option class="drop" value="Any Other">Any Other</option>
                 </select>
                 <textarea name="" id="" cols="30" rows="3" placeholder="Description"></textarea>
                 <div class="container-btn">
                     <input type="submit" value="submit" class="btn">
-                </div>                
-                
+                </div>
+
             </div>
             <div class="contact-info">
                 <img src="image/contact-info-bg.jpg" alt="">
@@ -108,19 +109,20 @@
                         Bandra Mumbai 434502.
                         <br>
                         <br>
-                        <i class="fas fa-envelope" ></i> <a href="#">customerservice@bookida.com</a>
+                        <i class="fas fa-envelope"></i> <a href="#">customerservice@bookida.com</a>
                         <br>
-                        <i class="fas fa-phone" ></i> <a  href="">011-41521153</a><span>, Closed on Sundays and Public Holidays.</span><br>
-                        <i class="fas fa-clock" ></i> <span>9:00 am to 6:00 pm</span>
+                        <i class="fas fa-phone"></i> <a href="">011-41521153</a><span>, Closed on Sundays and Public
+                            Holidays.</span><br>
+                        <i class="fas fa-clock"></i> <span>9:00 am to 6:00 pm</span>
                     </p>
-        
+
                 </div>
             </div>
         </div>
     </section>
 
     <!-- contact us ends -->
-    
+
     <!-- newletter section starts -->
     <section class="newsletter">
         <form action="">
@@ -132,7 +134,7 @@
     </section>
     <!-- newletter section ends -->
 
-   
+
 
 
 
