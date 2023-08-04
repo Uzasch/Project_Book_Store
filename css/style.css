@@ -556,6 +556,88 @@ section{
     font-size: 1.5rem;
     color: var(--green);
 }
+.contact .container{
+    display: flex;
+}
+.contact .container .form{
+    width: 55%;
+}
+
+.contact .form p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.contact .form .box,
+.contact .form textarea {
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+.contact .form .container-btn{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.contact .form .email {
+    display: flex;
+    align-items: center;
+}
+
+.contact .form .email .box {
+    flex: 1;
+    width: 78%;
+    margin: 0.7rem 1rem 0.7rem 0rem;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+
+.contact .form .email .btn{
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0.7rem 0;
+}
+
+.contact .contact-info{
+    padding-left: 5rem; ;
+}
+
+.contact .contact-info img{ 
+    width: 45rem;
+    max-width: 100%;
+}
+.contact .contact-info .address p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.contact .contact-info .address i{
+color: var(--dark-color);
+}
+.contact .contact-info .address  a,
+.contact .contact-info .address  span{
+    color: var(--green);
+
+    }
+    
 
 
 
