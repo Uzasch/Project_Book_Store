@@ -7,7 +7,6 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>BookStore</title>
 
-    <!--font awesome cdn link and custom css file-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
@@ -16,8 +15,6 @@
 </head>
 
 <body>
-
-    <!-- header section start -->
     <header class="header">
         <div class="header-1">
             <a href="#" class="logo"> <i class="fas fa-book-open-reader"></i>bookida</a>
@@ -31,7 +28,6 @@
                 <a href="#" class="fas fa-shopping-cart"></a>
                 <div id="login-btn" class="fas fa-user"></div>
             </div>
-
         </div>
         <div class="header-2">
             <nav class="navbar">
@@ -42,113 +38,77 @@
                 <a href="#contact">contact</a>
             </nav>
         </div>
-
-
     </header>
-    <!-- header section ends -->
-    <!-- login form -->
-    <div class="login-form-container">
-
-        <div id="close-login-btn" class="fas fa-times"></div>
-        <form action="" onsubmit="return validateForm()">
-            <h3>sign in</h3>
-            <span>username</span>
-            <input type="email" name="username" class="box" placeholder="enter your email" id="username">
-            <span>password</span>
-            <input type="password" name="password" class="box" placeholder="enter your password" id="password">
-            <div class="checkbox">
-                <input type="checkbox" name="" id="remember-me">
-                <label for="remember-me">remember-me</label>
-            </div>
-            <input type="submit" value="sign in" class="btn">
-            <p>forget password ? <a href="#">click here</a></p>
-            <p>don't have an account ? <a href="#">create one</a></p>
-        </form>
-    </div>
-
-    <!-- contact us  starts-->
     <section class="contact" id="contact">
         <h1 class="heading"><span>contact us</span></h1>
         <div class="container">
-            <div class="form ">
+            <div class="form">
                 <p>Please fill up the form below to send us a message. We will contact you very soon.</p>
-                <input type="text" name="" class="box" placeholder="Your name" id="">
-                <div class="email">
-                    <input type="email" name="" class="box" placeholder="Email" id="">
-                    <input type="submit" value="Verify" class="btn">
-                </div>
-                <textarea name="" id="" cols="30" rows="2" placeholder="Address"></textarea>
-                <input type="number" name="" class="box" placeholder="Phone/Mobile" id="">
-                <input type="text" name="" class="box" placeholder="Subject" id="">
-                <select class="box">
-                    <option class="drop" value="--Select--">--Select--</option>
-                    <option class="drop" value="Payment Related">Payment Related</option>
-                    <option class="drop" value="Order Related">Order Related</option>
-                    <option class="drop" value="Courier Related">Courier Related</option>
-                    <option class="drop" value="Affiliate Related">Affiliate Related</option>
-                    <option class="drop" value="Authors/Publishers Related">Authors/Publishers Related</option>
-                    <option class="drop" value="Corporate Order/Bulk Sales">Corporate Order/Bulk Sales</option>
-                    <option class="drop" value="Business Related">Business Related</option>
-                    <option class="drop" value="Features,suggestions &amp; Feedback">Features,suggestions &amp; Feedback
-                    </option>
-                    <option class="drop" value="Any Other">Any Other</option>
-                </select>
-                <textarea name="" id="" cols="30" rows="3" placeholder="Description"></textarea>
-                <div class="container-btn">
-                    <input type="submit" value="submit" class="btn">
-                </div>
-
-            </div>
-            <div class="contact-info">
-                <img src="image/contact-info-bg.jpg" alt="">
-                <div class="address">
-                    <p>
-                        Platinium Buliding<br>
-                        9/22, ground floor , Jewel road ,
-                        <br>
-                        Bandra Mumbai 434502.
-                        <br>
-                        <br>
-                        <i class="fas fa-envelope"></i> <a href="#">customerservice@bookida.com</a>
-                        <br>
-                        <i class="fas fa-phone"></i> <a href="">011-41521153</a><span>, Closed on Sundays and Public
-                            Holidays.</span><br>
-                        <i class="fas fa-clock"></i> <span>9:00 am to 6:00 pm</span>
-                    </p>
-
-                </div>
+                <form action="process_form.php" method="post" onsubmit="return validateForm()">
+                    <input type="text" name="name" class="box" placeholder="Your name" id="name">
+                    <input type="email" name="email" class="box" placeholder="Email" id="email">
+                    <textarea name="address" id="address" cols="30" rows="2" placeholder="Address"></textarea>
+                    <input type="tel" name="phone" class="box" placeholder="Phone/Mobile" id="phone">
+                    <input type="text" name="subject" class="box" placeholder="Subject" id="subject">
+                    <select name="category" class="box" id="category">
+                        <option value="--Select--">--Select--</option>
+                        <option value="Payment Related">Payment Related</option>
+                        <option value="Order Related">Order Related</option>
+                        <option value="Courier Related">Courier Related</option>
+                        <option value="Affiliate Related">Affiliate Related</option>
+                        <option value="Authors/Publishers Related">Authors/Publishers Related</option>
+                        <option value="Corporate Order/Bulk Sales">Corporate Order/Bulk Sales</option>
+                        <option value="Business Related">Business Related</option>
+                        <option value="Features, Suggestions & Feedback">Features, Suggestions & Feedback</option>
+                        <option value="Any Other">Any Other</option>
+                    </select>
+                    <textarea name="description" id="description" cols="30" rows="3" placeholder="Description"></textarea>
+                    <div class="container-btn">
+                        <input type="submit" value="Submit" class="btn">
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-
-    <!-- contact us ends -->
-
-    <!-- newletter section starts -->
-    <section class="newsletter">
-        <form action="">
-            <h3>subscribe for latest updates</h3>
-            <input type="email" name="" placeholder="enter your email" id="" class="box">
-            <input type="submit" value="subscribe" class="btn">
-        </form>
-
-    </section>
-    <!-- newletter section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- custom js file link     -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var address = document.getElementById("address").value;
+            var phone = document.getElementById("phone").value;
+            var subject = document.getElementById("subject").value;
+            var category = document.getElementById("category").value;
+            var description = document.getElementById("description").value;
+            if (name.trim() === "") {
+                alert("Please enter your name.");
+                return false;
+            }
+            if (email.trim() === "") {
+                alert("Please enter your email.");
+                return false;
+            }
+            if (address.trim() === "") {
+                alert("Please enter your address.");
+                return false;
+            }
+            if (phone.trim() === "") {
+                alert("Please enter your phone/mobile number.");
+                return false;
+            }
+            if (subject.trim() === "") {
+                alert("Please enter the subject.");
+                return false;
+            }
+            if (category === "--Select--") {
+                alert("Please select a category.");
+                return false;
+            }
+            if (description.trim() === "") {
+                alert("Please enter a description.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
-
 </html>

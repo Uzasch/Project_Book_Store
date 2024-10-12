@@ -5,6 +5,7 @@ document.querySelector('#login-btn').onclick = () =>{
     loginForm.classList.toggle('active')
 }
 
+
 document.querySelector('#close-login-btn').onclick = () =>{
     loginForm.classList.remove('active')
 }

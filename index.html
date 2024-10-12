@@ -38,7 +38,7 @@
                 <a href="#home">home</a>
                 <a href="featured.html">featured</a>
                 <a href="arrival.html">arrivals</a>
-                <a href="https://www.sitejabber.com/reviews/bookswagon.com">reviews</a>
+                <a href="review.html">reviews</a>
                 <a href="contact-us.html">contact</a>
             </nav>
         </div>
@@ -48,22 +48,42 @@
     <!-- header section ends -->
     <!-- login form -->
     <div class="login-form-container">
-
         <div id="close-login-btn" class="fas fa-times"></div>
-        <form action="">
-            <h3>sign in</h3>
-            <span>username</span>
-            <input type="email" name="" class="box" placeholder="enter your email" id="">
-            <span>password</span>
-            <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <form action="process_login.php" method="POST" onsubmit="return validateForm()">
+            <h3>Sign In</h3>
+            <span>Email</span>
+            <input type="email" name="email" class="box" placeholder="Enter your email" id="email" required>
+            <span>Password</span>
+            <input type="password" name="password" class="box" placeholder="Enter your password" id="password" required>
             <div class="checkbox">
-                <input type="checkbox" name="" id="remember-me">
-                <label for="remember-me">remember-me</label>
+                <input type="checkbox" name="remember_me" id="remember-me">
+                <label for="remember-me">Remember me</label>
             </div>
-            <input type="submit" value="sign in" class="btn">
-            <p>forget password ? <a href="#">click here</a></p>
-            <p>don't have an account ? <a href="#">create one</a></p>
+            <input type="submit" value="Sign In" class="btn">
+            <p>Forgot your password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Create one</a></p>
         </form>
+
+        <script>
+            function validateForm() {
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if (email.trim() === "") {
+                    alert("Email field is required.");
+                    return false;
+                }
+
+                if (password.trim() === "") {
+                    alert("Password field is required.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+   
+    
+
     </div>
 
     <!--home section  -->
@@ -72,9 +92,11 @@
 
             <div class="content">
                 <h3>upto 75% off</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti id aliquam quam repellendus,
-                    neque, iste quod, magni animi eius laudantium. Eius, ducimus natus! Delectus incidunt ipsa in alias
-                    consequatur!</p>
+                <p>"Bookeeda: Your Online Bookstore Destination
+                    Bookeeda offers a vast collection of books across genres, user-friendly navigation, secure shopping,
+                    and fast delivery. Join our book-loving community, access ebooks and audiobooks, and enjoy special
+                    discounts. Your gateway to a world of literature awaits at Bookeeda."
+                </p>
                 <a href="#" class="btn">shop now</a>
             </div>
             <div class="slider-container">
@@ -142,18 +164,6 @@
 
     </section>
     <!-- newletter section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- custom js file link     -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
